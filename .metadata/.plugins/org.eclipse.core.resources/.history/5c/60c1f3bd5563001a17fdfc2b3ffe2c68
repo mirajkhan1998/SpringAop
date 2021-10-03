@@ -1,0 +1,5 @@
+package com.mba.security.bean;
+
+public class User {
+
+}

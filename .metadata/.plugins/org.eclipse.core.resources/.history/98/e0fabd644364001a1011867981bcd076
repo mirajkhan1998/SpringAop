@@ -1,0 +1,17 @@
+package com.aa.advice;
+
+import java.lang.reflect.Method;
+
+import org.springframework.aop.AfterReturningAdvice;
+
+public class ValidateKey implements AfterReturningAdvice {
+
+	@Override
+	public void afterReturning(Object ret, Method method, Object[] args, Object proxy) {
+		int retVal = (Integer) ret;
+		if (retVal == 0) {
+			throw new IllegalArgumentException("weak key");s
+		}
+	}
+
+}

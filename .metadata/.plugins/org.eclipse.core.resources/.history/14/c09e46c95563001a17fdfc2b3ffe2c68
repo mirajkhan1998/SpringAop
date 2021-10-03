@@ -1,0 +1,5 @@
+package com.mba.security;
+
+public class SecurityManager {
+
+}

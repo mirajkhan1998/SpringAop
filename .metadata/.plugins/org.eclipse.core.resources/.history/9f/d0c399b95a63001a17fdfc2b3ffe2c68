@@ -1,0 +1,23 @@
+package com.mba.test;
+
+import org.springframework.aop.framework.ProxyFactory;
+
+import com.mba.aspect.SecurityCheckAdvice;
+import com.mba.bean.LoanManager;
+import com.mba.security.SecurityManager;
+
+public class MBATest {
+	public static void main(String[] args) {
+		ProxyFactory pf = new ProxyFactory();
+		pf.setTarget(new LoanManager());
+		// pf.addAdvice(new AuditAdvice());
+		pf.addAdvice(new SecurityCheckAdvice());
+		SecurityManager securityManager = SecurityManager.getInstance();
+		securityManager.login("miraj", "root");
+		LoanManager proxy = (LoanManager) pf.getProxy();
+		boolean status = proxy.approveLoan("L00045566");
+		securityManager.logOut();
+		System.out.println("approvedLoan?: " + status);
+	}
+
+}

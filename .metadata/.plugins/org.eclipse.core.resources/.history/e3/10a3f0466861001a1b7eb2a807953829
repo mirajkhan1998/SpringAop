@@ -1,0 +1,29 @@
+package com.aa.advice;
+
+import org.aopalliance.intercept.MethodInterceptor;
+import org.aopalliance.intercept.MethodInvocation;
+
+import com.aa.helper.Cache;
+
+public class CacheAdvice implements MethodInterceptor {
+
+	@Override
+	public Object invoke(MethodInvocation methodInvocation) throws Throwable {
+		String methodName = null;
+		Object[] args = null;
+		String key = null;
+		Cache cache = null;
+		methodName = methodInvocation.getMethod().getName();
+		args = methodInvocation.getArguments();
+		cache = Cache.getInstance();
+		key = "add(10,20,30)";
+		if (cache.containsKey(key) == true) {
+			return cache.get(key);
+		}
+		Object ret = methodInvocation.proceed();
+		cache.put(key, ret);
+
+		return null;
+	}
+
+}

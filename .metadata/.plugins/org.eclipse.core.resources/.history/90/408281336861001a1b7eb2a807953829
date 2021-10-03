@@ -1,0 +1,5 @@
+package com.aa.advice;
+
+public class CacheAdvice {
+
+}

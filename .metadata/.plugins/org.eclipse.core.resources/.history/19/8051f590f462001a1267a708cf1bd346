@@ -1,0 +1,16 @@
+package com.mba.test;
+
+import org.springframework.aop.framework.ProxyFactory;
+
+import com.mba.aspect.AuditAdvice;
+import com.mba.bean.LoanManager;
+
+public class MBATest {
+	public static void main(String[] args) {
+		ProxyFactory pf = new ProxyFactory();
+		pf.setTarget(new LoanManager());
+		pf.addAdvice(new AuditAdvice());
+		LoanManager proxy = (LoanManager) pf.getProxy();
+	}
+
+}

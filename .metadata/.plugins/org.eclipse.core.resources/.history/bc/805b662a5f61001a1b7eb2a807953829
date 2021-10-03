@@ -1,0 +1,5 @@
+package com.arnasp.aspect;
+
+public class LoggingAdvice {
+
+}

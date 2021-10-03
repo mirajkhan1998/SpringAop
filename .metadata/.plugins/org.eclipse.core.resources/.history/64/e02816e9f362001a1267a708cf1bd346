@@ -1,0 +1,19 @@
+package com.mba.aspect;
+
+import java.lang.reflect.Method;
+
+import org.springframework.aop.MethodBeforeAdvice;
+
+public class AuditAdvice implements MethodBeforeAdvice{
+
+	@Override
+	public void before(Method method, Object[] arg, Object proxy) throws Throwable {
+		String methodName=null;
+		Object[] args=null;
+		
+		
+		
+	}
+	
+
+}

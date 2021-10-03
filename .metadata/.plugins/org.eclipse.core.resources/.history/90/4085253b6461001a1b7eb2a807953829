@@ -1,0 +1,22 @@
+package com.arnasp.test;
+
+import org.springframework.aop.framework.ProxyFactory;
+
+import com.arnasp.aspect.LoggingAdvice;
+import com.arnasp.beans.Calculator;
+
+public class LoggingAroundAdviceTest {
+
+	public static void main(String[] args) {
+		ProxyFactory pf = new ProxyFactory();
+		pf.addAdvice(new LoggingAdvice());
+		pf.setTarget(new Calculator());
+		Calculator proxy = (Calculator) pf.getProxy();
+		Calculator proxy=new Calculator();
+		double sum = proxy.add(10, 20,30);
+		
+		System.out.println("sum=" + sum);
+
+	}
+
+}

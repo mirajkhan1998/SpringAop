@@ -1,0 +1,26 @@
+package com.mba.security;
+
+import com.mba.security.bean.User;
+
+public class SecurityManager {
+	private static SecurityManager instance;
+	private static ThreadLocal<User> threadLocal;
+	User user = null;
+
+	private SecurityManager() {
+		threadLocal = new ThreadLocal<>();
+	}
+
+	public static SecurityManager getInstance() {
+		if (instance == null) {
+			instance = new SecurityManager();
+		}
+		return instance;
+	}
+
+	public void login(String un, String pw) {
+		user = new User(un, pw);
+		threadLocal.set(user);
+	}
+
+}

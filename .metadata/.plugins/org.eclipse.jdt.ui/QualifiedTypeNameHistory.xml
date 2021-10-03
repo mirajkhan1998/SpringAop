@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.cglib.proxy.Proxy"/>
+<fullyQualifiedTypeName name="com.aa.helper.Cache"/>
+<fullyQualifiedTypeName name="java.lang.IllegalAccessError"/>
+<fullyQualifiedTypeName name="com.mba.aspect.AuditAdvice"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="com.ms.advice.MessageBillAdvice"/>
+<fullyQualifiedTypeName name="com.ms.helper.MessageService"/>
+<fullyQualifiedTypeName name="com.ms.bean.Bill"/>
+<fullyQualifiedTypeName name="com.ta.bean.Thrower"/>
+<fullyQualifiedTypeName name="org.springframework.aop.support.StaticMethodMatcher"/>
+<fullyQualifiedTypeName name="com.aa.beans.Calculator"/>
+<fullyQualifiedTypeName name="com.aa.bean.KeyGenerator"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="org.springframework.aop.AfterReturningAdvice"/>
+<fullyQualifiedTypeName name="com.ms.helper.MessagingService"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="com.ms.advice.MessagingAdvice"/>
+<fullyQualifiedTypeName name="org.springframework.aop.MethodBeforeAdvice"/>
+<fullyQualifiedTypeName name="java.lang.ThreadLocal"/>
+<fullyQualifiedTypeName name="java.lang.SecurityManager"/>
+<fullyQualifiedTypeName name="java.lang.IllegalAccessException"/>
+<fullyQualifiedTypeName name="com.mba.advice.SecurityCheckAdvice"/>
+<fullyQualifiedTypeName name="java.lang.Throwable"/>
+<fullyQualifiedTypeName name="com.mba.security.SecurityManager"/>
+<fullyQualifiedTypeName name="com.mba.advice.AuditAdvice"/>
+<fullyQualifiedTypeName name="org.aopalliance.intercept.MethodInterceptor"/>
+<fullyQualifiedTypeName name="org.springframework.aop.support.StaticMethodMatcherPointcut"/>
+<fullyQualifiedTypeName name="org.springframework.aop.support.DynamicMethodMatcherPointcut"/>
+<fullyQualifiedTypeName name="org.springframework.aop.support.DefaultPointcutAdvisor"/>
+<fullyQualifiedTypeName name="com.pc.bean.Calculator"/>
+<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+<fullyQualifiedTypeName name="com.aa.exception.WeakKeyException"/>
+<fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+<fullyQualifiedTypeName name="org.springframework.aop.ThrowsAdvice"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Method"/>
+<fullyQualifiedTypeName name="org.springframework.aop.framework.ProxyFactory"/>
+</qualifiedTypeNameHistroy>
